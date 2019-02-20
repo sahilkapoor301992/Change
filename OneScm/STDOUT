@@ -1,0 +1,7 @@
+Feature: Login Action
+  Description: Test Login
+
+  Scenario: Successful Login with InValid Credentials         # LogIn_Test.feature:4
+    Given User is on Home Page
+    And User enters incorrect UserName and incorrect Password
+    Then Message displayed Login Denied
